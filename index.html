@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTGeats | Home</title>
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <script src="assets/fonts/SquadaOne/SquadaOne.js" defer></script>
+    <script src="js/splide.min.js" defer></script>
+  </head>
+  <body class="">
+    <header>
+      <a href="/"><h1 class="title">JTGeats</h1></a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button onclick="document.getElementById('btnSearch').click()">
+          <span class="icon search"
+            ><img src="assets/icons/search.svg" alt="Search"
+          /></span>
+        </button>
+        <button onclick="openModel('cart')">
+          <span class="icon bag"
+            ><img src="assets/icons/bag.svg" alt="Cart"
+          /></span>
+        </button>
+      </div>
+    </header>
+    <section class="hero" id="about">
+      <div class="hero-title">
+        <h2>Authentic Home<br />food in India</h2>
+        <p>
+          JTGeats is a courier service in which authentic home<br />cook food is
+          delivered to a customer.
+        </p>
+        <form class="searchbox" id="frmSearch" method="GET">
+          <input
+            type="search"
+            placeholder="Search food you love"
+            name="txtSearch"
+            required
+          />
+          <button type="submit" id="btnSearch">Search</button>
+        </form>
+      </div>
+      <div class="hero-img">
+        <img src="assets/hero-side.svg" alt="A chef cooking food in kitchen" />
+      </div>
+    </section>
+    <section class="prds" id="menu">
+      <h2>Home Kitchen</h2>
+      <div class="pd-container">
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img1.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <img src="assets/dynamic/img2.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img3.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <img src="assets/dynamic/img4.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img5.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <img src="assets/dynamic/img6.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img7.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img8.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img1.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <img src="assets/dynamic/img2.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <span class="badge"><p>50%</p></span>
+            <img src="assets/dynamic/img3.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="pd">
+          <figure class="pd-img">
+            <img src="assets/dynamic/img4.webp" alt="Pizza" />
+          </figure>
+          <figcaption class="pd-content">
+            <header class="pd-header">
+              <h4>Home made pizza</h4>
+              <p>₹190</p>
+            </header>
+            <div class="stats">
+              <div class="nact">
+                <span class="ratings">
+                  <img src="assets/icons/star.svg" alt="⭐" />
+                  <p>4.7</p>
+                </span>
+                <span class="time">
+                  <p>50-79 min</p>
+                </span>
+              </div>
+              <div class="actions">
+                <button class="icbtn hidden" onclick="removeFromCart(this)">
+                  <img src="assets/icons/remove.svg" alt="➖" />
+                </button>
+                <p class="noi hidden">0</p>
+                <button class="icbtn" onclick="addToCart(this)">
+                  <img src="assets/icons/add.svg" alt="➕" />
+                </button>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+      </div>
+    </section>
+    <section class="pitems">
+      <h2>Popular Items</h2>
+      <div id="splide" class="splide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <span class="icon-left"></span>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <span class="icon-right"></span>
+          </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <span class="badge"><p>20%</p></span>
+                  <img src="assets/dynamic/img10.webp" alt="Tandoori Chicken" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Tandoori Chicken</h4>
+                    <p>₹184</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.3</p>
+                      </span>
+                      <span class="time">
+                        <p>15-29 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <span class="badge"><p>50%</p></span>
+                  <img src="assets/dynamic/img9.webp" alt="Chilli Chicken" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Chilli Chicken</h4>
+                    <p>₹116</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.1</p>
+                      </span>
+                      <span class="time">
+                        <p>30-40 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <span class="badge"><p>50%</p></span>
+                  <img src="assets/dynamic/img1.webp" alt="Pizza" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Home made pizza</h4>
+                    <p>₹190</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.7</p>
+                      </span>
+                      <span class="time">
+                        <p>50-79 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <span class="badge"><p>50%</p></span>
+                  <img src="assets/dynamic/img4.webp" alt="Pizza" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Home made pizza</h4>
+                    <p>₹190</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.7</p>
+                      </span>
+                      <span class="time">
+                        <p>50-79 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <span class="badge"><p>50%</p></span>
+                  <img src="assets/dynamic/img6.webp" alt="Pizza" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Home made pizza</h4>
+                    <p>₹190</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.7</p>
+                      </span>
+                      <span class="time">
+                        <p>50-79 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="pd">
+                <figure class="pd-img">
+                  <img src="assets/dynamic/img1.webp" alt="Pizza" />
+                </figure>
+                <figcaption class="pd-content">
+                  <header class="pd-header">
+                    <h4>Home made pizza</h4>
+                    <p>₹190</p>
+                  </header>
+                  <div class="stats">
+                    <div class="nact">
+                      <span class="ratings">
+                        <img src="assets/icons/star.svg" alt="⭐" />
+                        <p>4.7</p>
+                      </span>
+                      <span class="time">
+                        <p>50-79 min</p>
+                      </span>
+                    </div>
+                    <div class="actions">
+                      <button
+                        class="icbtn hidden"
+                        onclick="removeFromCart(this)"
+                      >
+                        <img src="assets/icons/remove.svg" alt="➖" />
+                      </button>
+                      <p class="noi hidden">0</p>
+                      <button class="icbtn" onclick="addToCart(this)">
+                        <img src="assets/icons/add.svg" alt="➕" />
+                      </button>
+                    </div>
+                  </div>
+                </figcaption>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta-container">
+        <button class="btn-cta" onclick="openModel('newDish')">
+          Request a Dish
+        </button>
+      </div>
+    </section>
+    <section id="blog">
+      <h3>We are providing best<br />home cooked food delivery service.</h3>
+      <p>
+        Away from home and craving the tasty homemade recipes? Choose from a
+        selection of our delicious home cooked dishes
+      </p>
+      <div class="video-container">
+        <video
+          id="aboutVideo"
+          class="video"
+          src="assets/video.mp4"
+          poster="assets/video.jpg"
+        ></video>
+        <button class="play-button" id="playButton">
+          <span class="icon-right"></span>
+        </button>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content">
+        <h3>Do you have a question<br />or want to become a seller?</h3>
+        <p>Fill this form and our manager will contact you next 48 hours.</p>
+        <form id="contactForm">
+          <div class="naem">
+            <input
+              type="text"
+              name="fullname"
+              class="txt"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="txt"
+              placeholder="Your e-mail"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            class="txt"
+            rows="4"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <aside>
+        <img src="assets/contact.webp" alt="Food Delivery Guy in Two Wheeler" />
+      </aside>
+    </section>
+    <section class="footer">
+      <footer class="has-bottom-line">
+        <a href="/"><h1 class="title">JTGeats</h1></a>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="actions" style="gap: 1rem">
+          <a href="https://facebook.com" target="_blank">
+            <img src="assets/icons/facebook.svg" alt="Facebook Icon" />
+          </a>
+          <a class="https://instagram.com" target="_blank">
+            <img src="assets/icons/instagram.svg" alt="Instagram Icon" />
+          </a>
+        </div>
+      </footer>
+    </section>
+    <!-- Modals -->
+    <section class="modals" id="model-container">
+      <article id="cart">
+        <figure>
+          <img src="assets/icons/shopping-bag.svg" alt="🛒" />
+        </figure>
+        <figcaption>
+          <h4>Cart is Empty</h4>
+          <p>Add some items to the cart to checkout</p>
+          <button class="btn" onclick="closeModel()">Back to Menu</button>
+        </figcaption>
+      </article>
+      <article id="newDish">
+        <h4>Request a Dish</h4>
+        <form>
+          <div class="form-control">
+            <label for="txtDishName">Name*</label>
+            <input
+              type="text"
+              name="txtDishName"
+              id="txtDishName"
+              class="txt"
+              placeholder="Enter the name of the dish"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="txtImage">Upload an image</label>
+            <input
+              type="text"
+              name="txtImage"
+              id="txtImage"
+              class="txt"
+              placeholder="Paste a URL"
+            />
+          </div>
+          <div class="actions">
+            <button
+              class="btn btn-outline"
+              type="button"
+              onclick="closeModel()"
+            >
+              Cancel
+            </button>
+            <button class="btn" type="submit">Submit Request</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#splide", {
+          type: "loop",
+          perPage: 3,
+          focus: "center",
+          gap: "3rem",
+          arrows: true,
+          pagination: false,
+          width: "100%",
+          height: "420px",
+          breakpoints: {
+            1234: {
+              perPage: 2,
+            },
+            960: {
+              perPage: 1,
+              gap: "2rem",
+            },
+          },
+        }).mount();
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
