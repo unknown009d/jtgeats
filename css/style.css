@@ -1,26 +1,26 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/fonts/Roboto/Roboto-VariableFont_wdth.ttf")
+  src: url("../assets/fonts/Roboto/Roboto-VariableFont_wdth.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "SquadaOne";
-  src: url("/assets/fonts/SquadaOne/SquadaOne-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/SquadaOne/SquadaOne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Icons";
-  src: url("/assets/fonts/Icons/Icons.ttf") format("truetype");
+  src: url("../assets/fonts/Icons/Icons.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -219,6 +219,7 @@ nav {
 }
 .hero-title h2 {
   font-size: 4.5rem;
+  font-weight: 400;
   @media only screen and (max-width: 860px) {
     font-size: 3rem;
   }
